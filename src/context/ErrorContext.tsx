@@ -8,7 +8,7 @@ interface UserCheck {
 export const ErrorContext = React.createContext<UserCheck>(
     {
         errorActive:false,
-        setErrorActive:(value:boolean)=>{}
+        setErrorActive:()=>{}
     }
 );
 

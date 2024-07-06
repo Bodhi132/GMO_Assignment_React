@@ -1,4 +1,3 @@
-import React from 'react'
 import DepartmentMenu from '../components/DepartmentMenu'
 import DataTable from '../components/DataTable'
 import { Stack } from '@mui/material'

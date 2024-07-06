@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState, useEffect } from 'react'
 import axios, { AxiosResponse } from 'axios'
 import Box from '@mui/material/Box';
@@ -23,8 +22,6 @@ const DataTable = () => {
       const responseData: User[] = response.data;
 
       setData(responseData)
-
-      console.log(responseData);
 
     } catch (error) {
       console.log(error);
