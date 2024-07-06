@@ -47,10 +47,11 @@ const DepartmentForm = ({ department, sub_departments }: DepartmentFormProps) =>
       );
 
   return (
-    <div className='flex flex-col'>
-        <div className=' flex items-center'>
-        {subDispaly===false?<FiPlus onClick={() => setSubDispaly(!subDispaly)} className='mr-5 hover:cursor-pointer'/>:
-        <LuMinus onClick={() => setSubDispaly(!subDispaly)} className='mr-5 hover:cursor-pointer'/>}
+    <div style={{display:'flex',flexDirection:'column'}}>
+        <div style={{display:'flex',alignItems:"center"}}>
+        {subDispaly===false?<FiPlus onClick={() => setSubDispaly(!subDispaly)}
+        style={{marginRight:'1.25rem',cursor:'pointer'}}/>:
+        <LuMinus onClick={() => setSubDispaly(!subDispaly)} style={{marginRight:'1.25rem',cursor:'pointer'}}/>}
         <FormControlLabel
         label={department +" (" + sub_departments.length + ")"}
         control={

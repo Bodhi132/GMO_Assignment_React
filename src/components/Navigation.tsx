@@ -23,7 +23,7 @@ const Navigation = () => {
   };
 
   return (
-    <div className=' w-full justify-end mt-4'>
+    <div style={{width:'100%',display:'flex',justifyContent:'flex-end',marginTop:'1rem'}}>
         <Button onClick={handleGoForward} disabled={location.pathname === '/display'} sx={{border:'2px solid #1b91ab'}}>Next</Button>
     </div>
   );
