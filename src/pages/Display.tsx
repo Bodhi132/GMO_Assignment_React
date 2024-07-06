@@ -5,8 +5,8 @@ import { Stack } from '@mui/material'
 const Display = () => {
   return (
     <Stack spacing={2}>
-        <DepartmentMenu />
         <DataTable />
+        <DepartmentMenu />
     </Stack>
   )
 }
