@@ -40,7 +40,7 @@ const ContactForm: React.FC = () => {
     {errorActive && (
         <Alert severity="error">
           <AlertTitle>Error</AlertTitle>
-          Please fill out all fields
+          Please fill out all fields and press Submit
         </Alert>
       )}
       <form onSubmit={handleSubmit} >
